@@ -35,6 +35,9 @@ function App(props: { data: string }) {
       git clone https://github.com/cw1997/ez-react-demo.git
     </pre>
     <pre>
+      cd ez-react-demo
+    </pre>
+    <pre>
       npm install
     </pre>
     <pre>
