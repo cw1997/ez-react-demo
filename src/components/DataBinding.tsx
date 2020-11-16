@@ -46,16 +46,20 @@ export default class DataBinding extends React.Component<any, any> {
         <h1>
           Data Binding - Responsive
         </h1>
+        <p>
+          use onInput instead of onChange, because onChange unable to update state in real time,
+          in the next state, ez-react will re-render and using old state to render input DOM
+        </p>
         {/*<input type="text" onKeyPress={this.onKeyPress} value={data}/>*/}
+        <label htmlFor="onInput">
+          onInput
+          <input type="text" id="onInput" onInput={this.onChange} value={data}/>
+        </label>
         <label htmlFor="onChange">
           onChange
           <input type="text" id="onChange" onChange={this.onChange} value={data}/>
         </label>
         <hr/>
-        <label htmlFor="onInput">
-          onInput
-          <input type="text" id="onInput" onInput={this.onChange} value={data}/>
-        </label>
         <hr/>
         <div id={data}>see the attribute: id, {data}</div>
       </div>
