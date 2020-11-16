@@ -83,7 +83,7 @@ module.exports = {
   // devtool: 'eval', // 'eval' is not supported by error-overlay-webpack-plugin
   devServer: {
     contentBase: "./dist",
-    host: "0.0.0.0",
+    host: "127.0.0.1",
     port: 7991,
     historyApiFallback: true,
     overlay: {
