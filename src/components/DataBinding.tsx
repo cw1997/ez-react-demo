@@ -51,16 +51,18 @@ export default class DataBinding extends React.Component<any, any> {
           in the next state, ez-react will re-render and using old state to render input DOM
         </p>
         {/*<input type="text" onKeyPress={this.onKeyPress} value={data}/>*/}
-        <label htmlFor="onInput">
-          onInput
-          <input type="text" id="onInput" onInput={this.onChange} value={data}/>
-        </label>
-        <label htmlFor="onChange">
-          onChange
-          <input type="text" id="onChange" onChange={this.onChange} value={data}/>
-        </label>
-        <hr/>
-        <hr/>
+        <div>
+          <label htmlFor="onInput">
+            onInput
+            <input type="text" id="onInput" onInput={this.onChange} value={data}/>
+          </label>
+        </div>
+        <div>
+          <label htmlFor="onChange">
+            onChange
+            <input type="text" id="onChange" onChange={this.onChange} value={data}/>
+          </label>
+        </div>
         <div id={data}>see the attribute: id, {data}</div>
       </div>
     )
