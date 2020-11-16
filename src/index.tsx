@@ -18,8 +18,33 @@ function SimpleComponent(props: {children: string | number | boolean}) {
 }
 
 function App(props: { data: string }) {
+  const Copyright = () => <div className="Copyright">
+    <h1>ez-react demo</h1>
+    <div>github:
+      <p>
+        <a href="https://github.com/cw1997/ez-react-demo">https://github.com/cw1997/ez-react-demo</a>
+      </p>
+      <p>
+        <a href="https://github.com/cw1997/ez-react">https://github.com/cw1997/ez-react</a>
+      </p>
+      <p>
+        <a href="https://github.com/cw1997/ez-react-dom">https://github.com/cw1997/ez-react-dom</a>
+      </p>
+    </div>
+    <pre>
+      git clone https://github.com/cw1997/ez-react-demo.git
+    </pre>
+    <pre>
+      npm install
+    </pre>
+    <pre>
+      npm start
+    </pre>
+  </div>
   return (
     <div className="App">
+      <Copyright/>
+      <hr/>
       <Counter name={'cw1997'} sex={'male'}/>
       <hr/>
       <Counter name={'changwei1006'} sex={'female'}/>
