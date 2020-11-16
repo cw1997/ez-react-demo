@@ -89,9 +89,9 @@ module.exports = {
     overlay: {
       errors: true
     },
-    open: false,
+    open: true,
     inline: true,
-    hot: false,
+    hot: true,
     compress: false,
   },
 };
