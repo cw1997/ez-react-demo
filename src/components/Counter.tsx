@@ -66,10 +66,7 @@ export default class Counter extends React.Component<IProps, IState> {
 
   EvenNumber (subProps) {
     return <div id="even">
-      {subProps.children} ,
-      TODO: bug !! when component re-render,
-      children render incomplete,
-      as you see, this line will disappear after you click button.
+      start -{' '}{subProps.children}{' '}- end
     </div>
   }
   OddNumber (subProps) {
