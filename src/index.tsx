@@ -5,6 +5,7 @@ import './index.sass'
 import DataBinding from "./components/DataBinding";
 import Counter from "./components/Counter";
 import Clock from "./components/Clock";
+import TestRefByCanvas from "./components/TestRefByCanvas";
 
 
 function SimpleComponent(props: {children: string | number | boolean}) {
@@ -77,6 +78,8 @@ function App(props: { data: string }) {
         <div id="inner-div">inner div</div>
         end - {props.data}
       </div>
+      <hr/>
+      <TestRefByCanvas x={50} h={50} w={50} y={50}/>
       <hr/>
       <SimpleComponent>123</SimpleComponent>
       <SimpleComponent>{123}</SimpleComponent>
