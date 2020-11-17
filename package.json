@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
-    "build": "webpack"
+    "build": "webpack",
+    "dev:local": "npm uninstall @cw1997/ez-react ez-react-dom && npm link @cw1997/ez-react ez-react-dom"
   },
   "keywords": [],
   "author": "",
@@ -36,7 +37,7 @@
     "webpack-merge": "^5.1.2"
   },
   "dependencies": {
-    "@cw1997/ez-react": "^1.0.3",
-    "ez-react-dom": "^1.0.2"
+    "@cw1997/ez-react": "latest",
+    "ez-react-dom": "latest"
   }
 }
